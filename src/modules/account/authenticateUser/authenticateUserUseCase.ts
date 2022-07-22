@@ -35,6 +35,7 @@ export class AuthenticateUserUseCase {
             data: {
                 cpf,
                 token,
+                id: userExist.id,
                 name: userExist.name,
                 level: userExist.level,
                 email: userExist.email,

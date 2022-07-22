@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgres"
   url      = env("DATABASE_URL")
 }
 
@@ -39,11 +39,11 @@ model TechnicalUserTemp {
 model Question {
   id String @id   @default(uuid())
   subject String
-  protocol Int
+  protocol String
   description String
-  id_user Int
+  id_user String
   status String
-  technician_user Int
+  technician_user String 
   created_at DateTime  @default(now())
   updated_at DateTime @updatedAt
   @@map("question")

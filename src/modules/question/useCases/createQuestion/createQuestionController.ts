@@ -8,12 +8,13 @@ export class CreateQuestionController {
 
        const createQuestionUseCase = new CreateQuestionUseCase();
        const result = await createQuestionUseCase.execute({
+        technician_user,
         subject, 
         protocol, 
         description, 
         id_user, 
         status, 
-        technician_user 
+        
        }) 
 
        return response.json(result)

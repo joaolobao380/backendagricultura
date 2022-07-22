@@ -2,11 +2,11 @@ import { prisma } from "../../../../database/prismaClient";
 
 interface CreateQuestionProps {
     subject: string;
-    protocol: number;
+    protocol: string;
     description: string;
-    id_user: number;
+    id_user: string;
     status: string;
-    technician_user: number;
+    technician_user: string;
 }
 
 export class CreateQuestionUseCase {
