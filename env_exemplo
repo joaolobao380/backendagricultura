@@ -1,1 +1,1 @@
-DATABASE_URL="postgresql://postgres:postgrespw@localhost:55000/farmer?schema=public"
+DATABASE_URL="mysql://thercio_root:U1!uL348@localhost:3306/farmer"
